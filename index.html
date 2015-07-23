@@ -11,6 +11,13 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Issue Creation by TheBlackTuxCorp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+     function foo() {
+        alert($("#sentence-text").value());
+        return false;
+     }
+   </script>
   </head>
 
   <body>
@@ -32,9 +39,9 @@
 
           <form>
             Text:<br>
-            <input type="text" name="sentence" value="Forwards ">
+            <input id="sentence-text" type="text" name="sentence" value="Forwards ">
             <br><br>
-            <input type="submit" value="Invert">
+            <input type="submit" value="Invert" onclick="return foo();">
           </form>
         </section>
 
