@@ -14,7 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
      function foo() {
-        alert($("#sentence-text").val().split(" ").split("").reverse().join("").join(""));
+        var flip = $.map($("#sentence-text").val().split(" "), function(x){ return x.split("").reverse()}).join("");
+        $("#sentence-text").val(flip);
         return false;
      }
    </script>
