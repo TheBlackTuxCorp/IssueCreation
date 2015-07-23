@@ -1,4 +1,4 @@
 # IssueCreation
 A branch for demonstrating issue creation
 
-Go to http://theblacktuxcorp.github.io/IssueCreation/ and create an issue.
+Go to http://theblacktuxcorp.github.io/IssueCreation/, find a bug, and create an issue here.
